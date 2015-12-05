@@ -23,7 +23,7 @@ function parseSteamProfileURL(URL)
 	return arr[4];
 }
 //console.log(steamProfileURL.split("/").length);
-var ID = "Nameki";
+var ID = "AkimboChickenStrips";
 //var urlID = parseSteamProfileURL(steamProfileURL);
 
 Steam.ready(function(err) 
