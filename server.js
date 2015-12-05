@@ -11,7 +11,10 @@ const PORT=80;
 //Create a server
 var server = http.createServer(function(request, response) {
     var file      = path.basename(request.url) || 's.html';
-    
+    if (file == 'index.html')
+    {
+      file = 's.html';
+    }
     /*console.log(request.url);  
     fs.exists(file, function(exists) {
         if(exists) {
